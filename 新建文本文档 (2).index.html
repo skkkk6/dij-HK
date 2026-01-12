@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJI Global Authorized Retailer | 大疆全球授权专卖</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .whatsapp-pulse {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-pulse:hover { transform: scale(1.1); }
+        [lang-content] { display: none; }
+        .active-lang { display: inline !important; }
+        .active-lang-block { display: block !important; }
+        .active-lang-flex { display: flex !important; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <a href=" " target="_blank" class="whatsapp-pulse">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a >
+
+    <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between h-20 items-center">
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl font-black tracking-tighter">DJI</span>
+                <span class="h-6 w-[1px] bg-gray-300"></span>
+                <span class="text-[10px] tracking-[0.2em] text-gray-500 uppercase font-bold">Global Partner</span>
+            </div>
+            
+            <div class="flex items-center space-x-6">
+                <select onchange="changeLang(this.value)" class="bg-gray-100 border-none rounded-lg px-3 py-1.5 text-sm font-medium focus:ring-2 focus:ring-blue-500">
+                    <option value="zh">简体中文</option>
+                    <option value="zt">繁體中文</option>
+                    <option value="en">English</option>
+                    <option value="jp">日本語</option>
+                    <option value="es">Español</option>
+                </select>
+                <a href="https://whatsapp.com/dl/" class="hidden md:flex items-center bg-black text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-gray-800 transition">
+                    <i class="fa-brands fa-whatsapp mr-2 text-green-400"></i>
+                    <span lang-content="zh">咨询</span>
+                    <span lang-content="zt">諮詢</span>
+                    <span lang-content="en">Chat</span>
+                    <span lang-content="jp">相談</span>
+                    <span lang-content="es">Chat</span>
+                </a >
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center hero-gradient text-white">
+        <div class="max-w-4xl px-6 text-center">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight leading-tight">
+                <span lang-content="zh">未来，无所不在</span>
+                <span lang-content="zt">未來，無所不在</span>
+                <span lang-content="en">The Future of Possible</span>
+                <span lang-content="jp">可能性の未来へ</span>
+                <span lang-content="es">El Futuro de lo Posible</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-200 font-light">
+                <span lang-content="zh">大疆创新官方合作零售商 - 提供顶级航拍体验</span>
+                <span lang-content="zt">大疆創新官方合作零售商 - 提供頂級航拍體驗</span>
+                <span lang-content="en">Official DJI Global Partner - Elevating your perspective</span>
+                <span lang-content="jp">DJI公式グローバルパートナー - 新たな視点へ</span>
+                <span lang-content="es">Socio oficial de DJI - Elevando tu perspectiva</span>
+            </p >
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://whatsapp.com/dl/" class="bg-[#25d366] px-10 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i>
+                    <span lang-content="zh">获取优惠价</span><span lang-content="zt">獲取優惠價</span>
+                    <span lang-content="en">Get Special Price</span><span lang-content="jp">特別価格を取得</span>
+                    <span lang-content="es">Obtener Precio</span>
+                </a >
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl font-bold">100+</p >
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                    <span lang-content="zh">销往国家</span><span lang-content="zt">銷往國家</span>
+                    <span lang-content="en">Countries Sold</span><span lang-content="jp">販売国</span><span lang-content="es">Países</span>
+                </p >
+            </div>
+            <div>
+                <p class="text-3xl font-bold">24h</p >
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                    <span lang-content="zh">极速发货</span><span lang-content="zt">極速發貨</span>
+                    <span lang-content="en">Fast Shipping</span><span lang-content="jp">迅速な配送</span><span lang-content="es">Envío Rápido</span>
+                </p >
+            </div>
+            <div>
+                <p class="text-3xl font-bold">Global</p >
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                    <span lang-content="zh">联合保修</span><span lang-content="zt">聯合保修</span>
+                    <span lang-content="en">Global Warranty</span><span lang-content="jp">グローバル保証</span><span lang-content="es">Garantía</span>
+                </p >
+            </div>
+            <div>
+                <p class="text-3xl font-bold">5.0</p >
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                    <span lang-content="zh">用户好评</span><span lang-content="zt">用戶好評</span>
+                    <span lang-content="en">User Rating</span><span lang-content="jp">ユーザー評価</span><span lang-content="es">Valoración</span>
+                </p >
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-20 tracking-tight">
+                <span lang-content="zh">探索我们的产品</span><span lang-content="zt">探索我們的產品</span>
+                <span lang-content="en">Explore Our Lineup</span><span lang-content="jp">ラインナップを探る</span><span lang-content="es">Nuestra Gama</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group cursor-pointer">
+                    <div class="aspect-square bg-gray-100 rounded-3xl overflow-hidden mb-6">
+                        < img src="https://images.unsplash.com/photo-1579829366248-204fe8413f31?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">DJI Mavic 3 Pro</h3>
+                    <p class="text-gray-500 mb-4 h-12">
+                        <span lang-content="zh">影像至上，三摄系统定义旗舰。</span>
+                        <span lang-content="zt">影像至上，三攝系統定義旗艦。</span>
+                        <span lang-content="en">Inspiration in Focus. Triple-camera system.</span>
+                        <span lang-content="jp">撮影を至高のレベルに。三眼カメラ。</span>
+                        <span lang-content="es">Inspiración en foco. Sistema de triple cámara.</span>
+                    </p >
+                    <a href="https://whatsapp.com/dl/" class="inline-block font-bold border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition">
+                        <span lang-content="zh">了解更多</span><span lang-content="zt">瞭解更多</span>
+                        <span lang-content="en">Learn More</span><span lang-content="jp">もっと詳しく</span><span lang-content="es">Más info</span>
+                    </a >
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="aspect-square bg-gray-100 rounded-3xl overflow-hidden mb-6">
+                        < img src="https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">DJI Air 3</h3>
+                    <p class="text-gray-500 mb-4 h-12">
+                        <span lang-content="zh">双主摄系统，卓越航时与避障。</span>
+                        <span lang-content="zt">雙主攝系統，卓越航時與避障。</span>
+                        <span lang-content="en">Dual Primary Cameras. Extended flight time.</span>
+                        <span lang-content="jp">2つのメインカメラ。長時間飛行。</span>
+                        <span lang-content="es">Doble cámara principal. Tiempo de vuelo extendido.</span>
+                    </p >
+                    <a href="https://whatsapp.com/dl/" class="inline-block font-bold border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition">
+                        <span lang-content="zh">了解更多</span><span lang-content="zt">瞭解更多</span>
+                        <span lang-content="en">Learn More</span><span lang-content="jp">もっと詳しく</span><span lang-content="es">Más info</span>
+                    </a >
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="aspect-square bg-gray-100 rounded-3xl overflow-hidden mb-6">
+                        < img src="https://images.unsplash.com/photo-1527977966376-1c8418f9f108?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">DJI Mini 4 Pro</h3>
+                    <p class="text-gray-500 mb-4 h-12">
+                        <span lang-content="zh">迷你身材，全向避障，专业画质。</span>
+                        <span lang-content="zt">迷你身材，全向避障，專業畫質。</span>
+                        <span lang-content="en">Mini to the Max. Omni-obstacle sensing.</span>
+                        <span lang-content="jp">ミニサイズでも最高。全方向障害物検知。</span>
+                        <span lang-content="es">Mini al máximo. Detección omnidireccional.</span>
+                    </p >
+                    <a href="https://whatsapp.com/dl/" class="inline-block font-bold border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition">
+                        <span lang-content="zh">了解更多</span><span lang-content="zt">瞭解更多</span>
+                        <span lang-content="en">Learn More</span><span lang-content="jp">もっと詳しく</span><span lang-content="es">Más info</span>
+                    </a >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-10">
+                <span lang-content="zh">联系我们的专家团队</span><span lang-content="zt">聯繫我們的專家團隊</span>
+                <span lang-content="en">Talk to Our Drone Experts</span><span lang-content="jp">専門スタッフに相談する</span>
+                <span lang-content="es">Habla con Nuestros Expertos</span>
+            </h2>
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://whatsapp.com/dl/" target="_blank" class="bg-white text-black px-12 py-4 rounded-full text-xl font-black hover:bg-gray-200 transition">
+                    WhatsApp Global Support
+                </a >
+                <p class="text-gray-500 text-sm tracking-widest uppercase">
+                    Authorized DJI Retailer Network | Worldwide Logistics
+                </p >
+                <div class="mt-10 border-t border-gray-800 pt-8 w-full flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-4">
+                    <p>© 2026 DJI GLOBAL RETAILER PARTNER.</p >
+                    <div class="flex space-x-6">
+                        <span>Shanghai</span><span>Hong Kong</span><span>London</span><span>New York</span><span>Tokyo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeLang(lang) {
+            // Hide all
+            document.querySelectorAll('[lang-content]').forEach(el => {
+                el.classList.remove('active-lang', 'active-lang-block', 'active-lang-flex');
+            });
+
+            // Show selected
+            const targets = document.querySelectorAll(`[lang-content="${lang}"]`);
+            targets.forEach(el => {
+                // Determine display type based on element
+                if (el.tagName === 'DIV' || el.tagName === 'P') {
+                    el.classList.add('active-lang-block');
+                } else {
+                    el.classList.add('active-lang');
+                }
+            });
+            
+            // Update document lang
+            document.documentElement.lang = lang;
+        }
+
+        // Initialize with Chinese Simplified
+        window.onload = () => changeLang('zh');
+    </script>
+</body>
+</html>
